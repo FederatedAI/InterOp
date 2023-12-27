@@ -12,7 +12,7 @@ With the vigorously support of industry partners such as the Privacy Computing I
 
 ## Privacy Computing Interconnection Framework/隐私计算互联互通统一框架
 
-隐私计算互联互通统一框架分为管理面与数据面两部分。管理面互通是对管理层所设计互联互通资源管理的统一抽象，数据面互通是指管理面下发到数据面的数据信息流转调度及相关计算存储操作。互通视角描述了异构隐私计算平台在实现互联互通（InterConn）相关功能时双方在东西向与南北向所需的基础信息交互；模块视角定了 InterConn 各层最小必要接口及其模块实现的功能要求。
+隐私计算互联互通统一框架分为管理面与数据面两部分。管理面互通是对管理层所涉及互联互通资源管理的统一抽象，数据面互通是指管理面下发到数据面的数据信息流转调度及相关计算存储操作。互通视角描述了异构隐私计算平台在实现互联互通（InterConn）相关功能时双方在东西向与南北向所需的基础信息交互；模块视角定了 InterConn 各层最小必要接口及其模块实现的功能要求。
 
 The unified framework for privacy computing-based interoperability is divided into two parts: the management plane and the data plane. The management plane interoperability refers to the unified abstraction designed for the interconnected resource management of the managerial level, while data plane interoperability refers to the data information flow dispatch and related computing and storage operations that are directed from the management plane to the data plane. The interoperability perspective describes the fundamental information exchange required in the east-west and north-south directions between heterogeneous privacy computing platforms when implementing interoperability (InterConn) related functions; the module perspective defines the minimal necessary interfaces at each layer of InterConn and the functional requirements of their module implementations.
 
