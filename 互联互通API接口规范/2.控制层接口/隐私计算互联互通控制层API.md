@@ -45,6 +45,7 @@
 <div align="center">
     <img src="./figure/控制层架构.png">
 </div>
+
 **文档版本**
 
 ```
