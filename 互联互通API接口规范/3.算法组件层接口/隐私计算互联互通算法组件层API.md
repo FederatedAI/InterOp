@@ -459,7 +459,7 @@ x-mprac-token-set：  required 多方资源访问控制的许可凭证，用于�
 
 ### 3.2 接口定义
 
-算法组件与控制层需要按照约定的参数传递规范与算法控制接口进行信息交互，具体接口包括以下：
+算法组件与控制层需要按照约定的参数传递规范与算法控制接口进行信息交互，算法对外端口由system.control_port静态环境变量指定。具体接口包括以下：
 
 #### 3.2.1 任务信息查询接口
 
@@ -521,6 +521,7 @@ x-mprac-token-set：  required 多方资源访问控制的许可凭证，用于�
 | system.callback  | 可选       | 调度层回调地址   | 可通过接口回调，也可通过容器运行结果，或其他 |
 | system.transport | 必选       | 传输服务地址     | 填写传输地址信息                             |
 | system.compute   | 可选       | 计算引擎服务地址 | 填写引擎服务地址信息                         |
+| system.control_port   | 可选       | 信息查询端口 | 填写算法容器对外的信息查询端口，默认10086         |
 
 #### 3.3.2 组件配置信息
 
@@ -589,7 +590,7 @@ x-mprac-token-set：  required 多方资源访问控制的许可凭证，用于�
 
 system.storage=s3://192.168.1.1:9000?username=admin&password=123456
 
-1. HDFS 存储：hdfs://{host}:{port}?username={username}&password={password}
+2. HDFS 存储：hdfs://{host}:{port}?username={username}&password={password}
 
 | **字段** | **说明**            |
 | -------- | ------------------- |
@@ -602,7 +603,7 @@ system.storage=s3://192.168.1.1:9000?username=admin&password=123456
 
 system.storage=hdfs://192.168.1.1:9000?username=admin&password=123456
 
-1. NFS 存储和本地存储：file://XXX//XXX
+3. NFS 存储和本地存储：file://XXX//XXX
 
 **示例：**
 
@@ -625,7 +626,7 @@ system.storage=file:///opt/iopy/
 | name        | 数据集名称                  |
 | parition    | 数据集分区序号              |
 
-1. HDFS 存储：
+2. HDFS 存储：
 
 数据集：hdfs://{dir}/{namespace}/{name}/data_{partition}
 
@@ -638,7 +639,7 @@ system.storage=file:///opt/iopy/
 | name      | 数据集名称                       |
 | parition  | 数据集分区序号                   |
 
-1. NFS 存储和本地存储：
+3. NFS 存储和本地存储：
 
 数据集：file:///{dir1}//{dir2}
 
@@ -663,7 +664,7 @@ system.compute=eggroll://192.168.1.1:4670
 
 ## 6 算法组件与传输层交互
 
-算法模块应支持与传输模块所约定的接口与报文规范，实现与多方协作通信完成算法任务，该部分接口在传输层 API 文档中的容器调用通信模块接口部分有相同的定义。
+算法模块应支持与传输模块所约定的接口与报文规范，实现与多方协作通信完成算法任务，该部分接口在[传输层 API 文档](../4.传输层接口/隐私计算互联互通传输层API.md)中的容器调用通信模块接口部分有相同的定义。
 
 ### 6.1 报文规范
 
