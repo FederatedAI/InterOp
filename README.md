@@ -24,13 +24,13 @@ The unified framework for privacy computing-based interoperability is divided in
 **Interconnection View/互通视角**
 
 <div align="center">
-    <img src="./GUIDE 互联互通集成对接指引/figure/互通视角.png">
+    <img src="./GUIDE/figure/互通视角.png">
 </div>
 
 **Module View/功能视角**
 
 <div align="center">
-    <img src="./GUIDE 互联互通集成对接指引/figure/功能视角.png">
+    <img src="./GUIDE/figure/功能视角.png">
 </div>
 
 ## Directory Structure/目录结构
@@ -58,7 +58,7 @@ The interface specification for this project has been completed through five par
 本次接口规范已经与隐私计算开源社区、头部科技公司等课题参与单位内完成了五方跨平台、跨算法的互通联调，验证了互联互通 API 接口规范支持多方异构隐私计算平台时的可行性与安全性。目前，商业银行、电信运营商、互联网公司等单位也正在积极对接验证中。
 
 <div align="center">
-    <img src="./GUIDE 互联互通集成对接指引/figure/案例说明.png">
+    <img src="./GUIDE/figure/案例说明.png">
 </div>
 
 <div style="text-align: center;">
@@ -69,7 +69,7 @@ The interface specification for this project has been completed through five par
 ## Contribution Institutions/参与单位
 
 <div align="center">
-    <img src="./GUIDE 互联互通集成对接指引/figure/参与单位.png">
+    <img src="./GUIDE/figure/参与单位.png">
 </div>
 
 ## License/版权声明
