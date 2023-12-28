@@ -1,8 +1,15 @@
 # README
 
+This repository hosts documentation and specifications detailing the interoperability of FATE with other systems. When a system requires the execution of a federated machine learning task with FATE, it can follow or reference a specification listed in this repository to establish a connection and collaborate seamlessly with FATE.
+
+本仓库托管了有关 FATE与主流隐私计算系统互操作性的文档和规范。当其他系统需要执行与 FATE 相关的隐私计算任务时，可以在此仓库中查阅或引用规范，实现与FATE无缝对接。
+
 ## Overview/概述
 
-To address the current interoperability issues of heterogeneous privacy computing platforms, organized by the Beijing Fintech Industry Alliance and led by China UnionPay Co. Ltd and in collaboration with more than 60 cooperators including major financial institutions, telecom operators, Internet companies, technology companies, testing organizations, research institutes, have collectively engaged in the work of enabling privacy computing interoperability. This has resulted in the formation of a unified framework for privacy computing interoperability, along with the establishment of API interface specifications for privacy computing-based interconnectivity.
+To address the current interoperability issues of heterogeneous privacy computing platforms, organized by the Beijing Fintech Industry Alliance and led by China UnionPay Co. Ltd and in collaboration with more than 60 cooperators including major financial institutions, telecom operators, Internet companies, technology companies, testing organizations, research institutes, have collectively engaged in the work of enabling privacy computing interoperability. This has resulted in the formation of a unified framework for privacy computing interoperability, along with the establishment of API interface specifications for privacy computing-based interconnectivity. FATE community also actively participated in the draft of the specification. FATE 2.0 architecture is compatible with this specification.
+
+
+为解决当前异构隐私计算平台互联互通问题，由北京金融科技产业联盟组织，中国银联牵头，联合主要金融机构、电信运营商、互联网公司、科技公司、检测机构、科研院所等60余家单位共同参与开展了隐私计算互联互通工作，形成了隐私计算互联互通统一框架，并制定了互联互通API接口规范。FATE社区也深度参与了该规范的制定，该规范与 FATE 2.0 架构兼容。
 
 With the vigorously support of industry partners such as the Privacy Computing Industry Alliance and the open source community, we have now completed the compatibility alignment of this interface specifications with various mainstream standards and technology paths. Furthermore, cross-platform multi-party interconnectivity verification has been accomplished with various mainstream privacy computing platforms. To assist developers of privacy computing platforms in improving their interconnectivity capabilities, we publish the API interface specifications and integration guidelines.
 
@@ -19,13 +26,13 @@ The unified framework for privacy computing-based interoperability is divided in
 **Interconnection View/互通视角**
 
 <div align="center">
-    <img src="./互联互通集成对接指引/figure/互通视角.png">
+    <img src="./GUIDE 互联互通集成对接指引/figure/互通视角.png">
 </div>
 
 **Module View/功能视角**
 
 <div align="center">
-    <img src="./互联互通集成对接指引/figure/功能视角.png">
+    <img src="./GUIDE 互联互通集成对接指引/figure/功能视角.png">
 </div>
 
 ## Directory Structure/目录结构
@@ -53,7 +60,7 @@ The interface specification for this project has been completed through five par
 本次接口规范已经与隐私计算开源社区、头部科技公司等课题参与单位内完成了五方跨平台、跨算法的互通联调，验证了互联互通 API 接口规范支持多方异构隐私计算平台时的可行性与安全性。目前，商业银行、电信运营商、互联网公司等单位也正在积极对接验证中。
 
 <div align="center">
-    <img src="./互联互通集成对接指引/figure/案例说明.png">
+    <img src="./GUIDE 互联互通集成对接指引/figure/案例说明.png">
 </div>
 
 <div style="text-align: center;">
@@ -65,7 +72,7 @@ The interface specification for this project has been completed through five par
 ## Contribution Institutions/参与单位
 
 <div align="center">
-    <img src="./互联互通集成对接指引/figure/参与单位.png">
+    <img src="./GUIDE 互联互通集成对接指引/figure/参与单位.png">
 </div>
 
 ## License/版权声明
