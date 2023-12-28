@@ -1,6 +1,6 @@
-# 隐私计算互联互通 TEE 统一远程证明规范
+# 隐私计算互联互通可信执行环境（TEE）统一远程证明对接指引
 
-- [隐私计算互联互通 TEE 统一远程证明规范](#隐私计算互联互通-tee-统一远程证明规范)
+- [隐私计算互联互通可信执行环境（TEE）统一远程证明对接指引](#隐私计算互联互通可信执行环境（TEE）统一远程证明对接指引)
   
   - [1 整体框架](#1-整体框架)
   
@@ -195,7 +195,7 @@ report_type 说明：
 
 report_params 需要不同的 TEE 实现方案自定义，为了最少化应用程序调用的修改，建议参考以下通用参数定义方案：
 
-```json
+```
 // JSON string of UnifiedAttestationReportParams
 // 没有把tee_identity等放入这里， 为了通常情况下避免提供JSON序列化的parameters
 {
@@ -263,7 +263,7 @@ int UnifiedAttestationVerifyReport(const char* report_json_str,
 
 统一远程证明报告格式（UAR）如下：
 
-```json
+```
 //UnifiedAttestationReport
 {
     // For compatibility and udpate later, current version is "1.0"
@@ -299,7 +299,7 @@ int UnifiedAttestationVerifyReport(const char* report_json_str,
 
 对于 SGX1， "str_platform"="SGX_EPID", "json_report"为下面 IAS 返回信息集合的 JSON 序列化字符串。
 
-```json
+```
 // 背调模式时仅使用b64_quote
 // Sgx1Report
 {
@@ -326,7 +326,7 @@ b64_quote_body 是 Intel SGX SDK 中 sgx_report_body_t 结构体的二进制数�
 
 对于 SGX2， "str_platform"="SGX_DCAP", "json_report"为下面格式的 JSON 序列化字符串。
 
-```json
+```
 // DcapReport
 {
     // 背调模式仅使用b64_quote
@@ -355,7 +355,7 @@ b64_quote_body 是 Intel SGX SDK 中 sgx_report_body_t 结构体的二进制数�
 
 对于 HyperEnclave， "str_platform"="HyperEnclave", "json_report"为下面格式的 JSON 序列化字符串。
 
-```json
+```
 // HyperenclaveReport
 {
     "b64_quote":"..."
@@ -368,7 +368,7 @@ b64_quote_body 是 Intel SGX SDK 中 sgx_report_body_t 结构体的二进制数�
 
 对应华为鲲鹏， "str_platform"="Kunpeng", "json_report"为下面格式的 JSON 序列化字符串。
 
-```json
+```
 // KunpengReport
 {
     "b64_quote":"...",
@@ -407,7 +407,7 @@ typedef struct __attribute__((__packed__)) report_response
 
 对应海光 CSV， "str_platform"="CSV", "json_report"为下面格式的 JSON 序列化字符串。
 
-```json
+```
 // HygonCsvReport
 {
     "b64_quote":"...",
@@ -469,7 +469,7 @@ typedef struct csv_report_s {
 校验规则和统一抽象的可信应用程序可以被远程证明校验的相关属性集合对应，校验方可以根据平台选择对应的校验属性。
 属性集合是所有 TEE 平台定义的可信应用程序属性的合集。
 
-```json
+```
 // UnifiedAttestationAttributes
 {
     "str_tee_platform":"...",           // TEE平台标识字符串, 对应UAR中str_platform字段
@@ -500,7 +500,7 @@ typedef struct csv_report_s {
 
 根据 UnifiedAttestationAttributes 我们可以指定对应的校验规则(UAP), 对应格式如下：
 
-```json
+```
 // UnifiedAttestationPolicy
 {
     // 假定一个公钥和一份报告绑定，可以在这里统一指定公钥。
@@ -765,7 +765,7 @@ TEE 应用数据统一封装格式可以帮助可信应用更好的交换和传�
 
 EE 应用数据封装应该包含数据本身、对应元数据、以及可选的用户数据传输握手协议的相关信息（如果不是基于其他类似 TLS 等外部安全通道。）
 
-```json
+```
 {
     "payload": {
         "str_cipher_mode":"...",
@@ -786,7 +786,7 @@ EE 应用数据封装应该包含数据本身、对应元数据、以及可选�
 
 json_data 可以是明文或者密文，如果是明文，对应如下格式 JSON 序列化字符串：
 
-```json
+```
 // DataPackage
 {
     "raw_data":{
