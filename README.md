@@ -13,8 +13,6 @@ To address the current interoperability issues of heterogeneous privacy computin
 
 With the vigorously support of industry partners such as the Privacy Computing Industry Alliance and the open source community, we have now completed the compatibility alignment of this interface specifications with various mainstream standards and technology paths. Furthermore, cross-platform multi-party interconnectivity verification has been accomplished with various mainstream privacy computing platforms. To assist developers of privacy computing platforms in improving their interconnectivity capabilities, we publish the API interface specifications and integration guidelines.
 
-为解决当前异构隐私计算平台互联互通问题，由北京金融科技产业联盟组织，中国银联牵头，联合主要金融机构、电信运营商、互联网公司、科技公司、检测机构、科研院所等 50 余家单位共同参与开展了隐私计算互联互通工作，形成了隐私计算互联互通统一框架，并制定了互联互通 API 接口规范。
-
 在隐私计算产业联盟、开源社区等产业合作伙伴的大力支持下，现已完成本接口规范与各主流标准、技术路线的兼容对齐，并进一步与各主流隐私计算平台完成了跨平台多方互通验证。为帮助各隐私计算平台开发者更好开展互联互通改造，现将互联互通 API 接口规范、集成对接指引等文档进行发布。
 
 ## Privacy Computing Interconnection Framework/隐私计算互联互通统一框架
