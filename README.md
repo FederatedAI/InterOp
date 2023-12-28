@@ -62,8 +62,7 @@ The interface specification for this project has been completed through five par
 </div>
 
 <div style="text-align: center;">
-      <p>Comparisons of data cooperation forms before and after multi-party interconnectivity</p>
-      <p>多方互联互通前后数据合作形态对比</p>
+      <p>Comparisons of data cooperation forms before and after multi-party interconnectivity / 多方互联互通前后数据合作形态对比</p>
 </div>
 
 
