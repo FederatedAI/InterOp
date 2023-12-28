@@ -17,6 +17,7 @@
 | 赵永坤 | 洞见科技         | zhaoyongkun@insightone.cn|
 | 马煜翔 | 蓝象智联         | zichen.ma@trustbe.cn          |
 | 王超   | 蓝象智联         | congying.wang@trustbe.cn   |
+| 杨天雅 | 富数科技         | salan@fudata.cn                  |
 
 ## 目录结构
 
