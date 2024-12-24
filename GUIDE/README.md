@@ -11,6 +11,7 @@
 | 姓名   | 单位     | 联系方式                                            |
 | ------ | -------- | --------------------------------------------------- |
 | 丁亚丹 | 中国银联 | dingyadan@unionpay.com|
+| 谢袁源 | 中国银联 | xieyuanyuan@unionpay.com |
 | 王思婷 | 招商银行         | w_siting@cmbchina.com       |
 | 刘瑞   | 上海浦东发展银行 | liur29@spdb.com.cn               |
 | 龚乐诚 | 上海浦东发展银行 | gonglc@spdb.com.cn            |
